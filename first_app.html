@@ -1,6 +1,8 @@
 <div id="first_app">
-	Changable message: {{ message }}
-	<span v-once>This message is not changeable: {{message}}</span>
+	Changable message: {{ message }}</br>
+	<span v-once>This message is not changeable: {{message}}</span></br>
+	using mustache: {{ raw_html }}</br>
+	using v-html: <span v-html="raw_html"></span></br>
 </div>
 
 <div id="app-2">

@@ -1,7 +1,8 @@
 var first_app = new Vue({
 		el : "#first_app",
 		data : {
-			message: "This is first app message."
+			message: "This is first app message.",
+			raw_html: "<span style='color: red'>This should be red</span>"
 		}
 	});
 
