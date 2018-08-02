@@ -48,8 +48,6 @@ var first_app = new Vue({
 		}		
 	});
 
-	var flexible_todo
-
 	var app6 = new Vue({
 		el: "#app-7",
 		data: {
