@@ -42,6 +42,12 @@ var first_app = new Vue({
 			}
 		},
 
+		computed: {
+			reversedMessage: function() {
+				return this.message.split('').reverse().join('');
+			}
+		},
+
 		components: {
 			todo_component:  Vue.component('todo-item', {
 						template: '<li>This is a todo</li>'

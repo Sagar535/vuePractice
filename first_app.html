@@ -27,7 +27,8 @@
 </div>
 
 <div id="app-5">
-	<p>{{ message }}</p>
+	<p>Normal message: {{ message }}</p></br>
+	<p>Reversed message: {{ reversedMessage }}</p>
 	<input type="text" v-model="message"></input>
 	<button v-on:click="reverseFunction">Reverse</button>
 	<todo-item></todo-item>
