@@ -29,10 +29,17 @@
 	<todo-item></todo-item>
 </div>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17/vue.min.js"></script>
+<div id="app-7">
+  <ol>
+    <todo-item2
+      v-for="item in grocery_list"
+      v-bind:todo="item"
+      v-bind:key="item.id">
+    </todo-item2>
+  </ol>
+</div>
+
+<script src="./script/vue.min.js"></script>
 
 <script src="./script/app.js"></script>
 
-<ol>
-	<todo-item></todo-item>
-</ol>

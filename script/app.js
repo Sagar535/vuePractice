@@ -30,10 +30,6 @@ var first_app = new Vue({
 		}
 	});
 
-	var todo_component = Vue.component('todo-item', {
-						template: '<li>This is a todo</li>'
-					});
-
 	var app5 = new Vue({
 		el: "#app-5",
 		data: {
@@ -46,6 +42,28 @@ var first_app = new Vue({
 		},
 
 		components: {
-			todo_component
+			todo_component:  Vue.component('todo-item', {
+						template: '<li>This is a todo</li>'
+					})
 		}		
+	});
+
+	var flexible_todo
+
+	var app6 = new Vue({
+		el: "#app-7",
+		data: {
+			grocery_list: [
+				{id:0, text:'Vegetables'},
+				{id:1, text:'Cheese'},
+				{id:2, text:'Ginger'}
+			]
+		},
+
+		components: {
+			flexible_todo: Vue.component('todo-item2', {
+								props: ['todo'],
+								template: '<li>{{ todo.text }}</li>'
+							})
+		}
 	});
